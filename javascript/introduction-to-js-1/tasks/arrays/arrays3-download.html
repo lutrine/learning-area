@@ -33,6 +33,17 @@
 
     // Add your code here
 
+    myArray.pop();
+
+    myArray.push("M. Bison", "Akuma", "Zangief");
+
+    myArray.forEach((element, index) => {
+      let newElement = `${element} (${index})`;
+      myArray[index] = newElement;
+    });
+
+    myString = myArray.join(" - ");
+
     // Don't edit the code below here!
 
     const section = document.querySelector("section");

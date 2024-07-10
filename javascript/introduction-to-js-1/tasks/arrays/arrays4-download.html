@@ -31,6 +31,16 @@
 
     // Add your code here
 
+    birds.splice(birds.indexOf("Eagles"), 1);
+
+    let eBirds = [];
+
+    birds.forEach((element) => {
+      if (element.startsWith("E")) {
+        eBirds.push(element);
+      }
+    });
+
     // Don't edit the code below here!
 
     const section = document.querySelector("section");
