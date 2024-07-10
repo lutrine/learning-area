@@ -1,24 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Object-oriented JavaScript inheritance</title>
   </head>
 
-  <body>
+  <body></body>
 
-  </body>
-
-    <script>
-
+  <script>
     // Basic Person class
 
     class Person {
       constructor(first, last, age, gender, interests) {
         this.name = {
           first,
-          last
+          last,
         };
         this.age = age;
         this.gender = gender;
@@ -27,20 +24,20 @@
 
       greeting() {
         console.log(`Hi! I'm ${this.name.first}`);
-      };
+      }
 
       farewell() {
         console.log(`${this.name.first} has left the building. Bye for now!`);
-      };
+      }
     }
 
     // Instantiate Person
 
-    let han = new Person('Han', 'Solo', 25, 'male', ['Smuggling']);
+    let han = new Person("Han", "Solo", 25, "male", ["Smuggling"]);
     han.greeting();
     // Hi! I'm Han
 
-    let leia = new Person('Leia', 'Organa', 19, 'female' ['Government']);
+    let leia = new Person("Leia", "Organa", 19, "female"["Government"]);
     leia.farewell();
     // Leia has left the building. Bye for now
 
@@ -58,11 +55,18 @@
 
     // Instantiate Teacher
 
-    let snape = new Teacher('Severus', 'Snape', 58, 'male', ['Potions'], 'Dark arts', 5);
+    let snape = new Teacher(
+      "Severus",
+      "Snape",
+      58,
+      "male",
+      ["Potions"],
+      "Dark arts",
+      5,
+    );
     snape.greeting(); // Hi! I'm Severus.
     snape.farewell(); // Severus has left the building. Bye for now.
-    console.log(snape.age) // 58
-    console.log(snape.subject) // Dark arts
-
-    </script>
+    console.log(snape.age); // 58
+    console.log(snape.subject); // Dark arts
+  </script>
 </html>

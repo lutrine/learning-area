@@ -1,4 +1,3 @@
-
 # Marking guide for "Sequencing animations"
 
 The following guide outlines a marking guide for the MDN Learning Area JavaScript Topic — [Sequencing animations](https://developer.mozilla.org/en-US/Learn/JavaScript/Asynchronous/Sequencing_animations). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth, and the mark breakdown.
@@ -20,13 +19,12 @@ The assessment asks for the animation sequence to be implemented in three differ
 Three marks for this. The code should look something like:
 
 ```js
-alice1.animate(aliceTumbling, aliceTiming).finished
-  .then(() => {
-    const alice2Animation = alice2.animate(aliceTumbling, aliceTiming).finished;
-    alice2Animation.then(() => {
-      alice3.animate(aliceTumbling, aliceTiming);
-    });
+alice1.animate(aliceTumbling, aliceTiming).finished.then(() => {
+  const alice2Animation = alice2.animate(aliceTumbling, aliceTiming).finished;
+  alice2Animation.then(() => {
+    alice3.animate(aliceTumbling, aliceTiming);
   });
+});
 ```
 
 The main thing here is that we nest calls to `then()`, making the code much harder to read.
@@ -36,19 +34,25 @@ The main thing here is that we nest calls to `then()`, making the code much hard
 Three marks for this. The code should look something like:
 
 ```js
-alice1.animate(aliceTumbling, aliceTiming).finished
-  .then(() => alice2.animate(aliceTumbling, aliceTiming).finished)
+alice1
+  .animate(aliceTumbling, aliceTiming)
+  .finished.then(() => alice2.animate(aliceTumbling, aliceTiming).finished)
   .then(() => alice3.animate(aliceTumbling, aliceTiming).finished)
-  .catch(error => console.error(`Error animating Alices: ${error}`));
+  .catch((error) => console.error(`Error animating Alices: ${error}`));
 ```
 
 This is the most concise version. It would be fine to have some different ways of writing the arrow functions, such as:
 
 ```js
-alice1.animate(aliceTumbling, aliceTiming).finished
-  .then(() => { return alice2.animate(aliceTumbling, aliceTiming).finished; })
-  .then(() => { return alice3.animate(aliceTumbling, aliceTiming).finished; })
-  .catch(error => console.error(`Error animating Alices: ${error}`));
+alice1
+  .animate(aliceTumbling, aliceTiming)
+  .finished.then(() => {
+    return alice2.animate(aliceTumbling, aliceTiming).finished;
+  })
+  .then(() => {
+    return alice3.animate(aliceTumbling, aliceTiming).finished;
+  })
+  .catch((error) => console.error(`Error animating Alices: ${error}`));
 ```
 
 ## async/await
@@ -61,8 +65,7 @@ async function animateAlices() {
     await alice1.animate(aliceTumbling, aliceTiming).finished;
     await alice2.animate(aliceTumbling, aliceTiming).finished;
     await alice3.animate(aliceTumbling, aliceTiming).finished;
-  }
-  catch (error) {
+  } catch (error) {
     console.error(`Error animating Alices: ${error}`);
   }
 }

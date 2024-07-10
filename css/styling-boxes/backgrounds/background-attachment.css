@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -23,7 +24,7 @@ body {
 p {
   padding: 10px;
   color: white;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 section {
@@ -33,7 +34,7 @@ section {
 article {
   flex: 1;
   height: 400px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url(emoji.png);
   background-size: 400px 400px;
   background-repeat: no-repeat;
@@ -46,7 +47,8 @@ article pre {
   height: 800px;
 }
 
-.fixed, .scroll {
+.fixed,
+.scroll {
   margin-right: 1%;
 }
 

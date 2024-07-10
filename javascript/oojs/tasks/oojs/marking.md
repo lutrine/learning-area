@@ -30,7 +30,7 @@ class Shape {
 
   calcPerimeter() {
     console.log(
-      `The ${this.name}'s perimeter length is ${this.sides * this.sideLength}.`
+      `The ${this.name}'s perimeter length is ${this.sides * this.sideLength}.`,
     );
   }
 }
@@ -66,7 +66,7 @@ class Shape {
 
   calcPerimeter() {
     console.log(
-      `The ${this.name}'s perimeter length is ${this.sides * this.sideLength}.`
+      `The ${this.name}'s perimeter length is ${this.sides * this.sideLength}.`,
     );
   }
 }
@@ -78,7 +78,7 @@ class Square extends Shape {
 
   calcArea() {
     console.log(
-      `The ${this.name}'s area is ${this.sideLength * this.sideLength} squared.`
+      `The ${this.name}'s area is ${this.sideLength * this.sideLength} squared.`,
     );
   }
 }

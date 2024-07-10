@@ -1,8 +1,8 @@
-const SauceLabs = require('saucelabs');
+const SauceLabs = require("saucelabs");
 
 let myAccount = new SauceLabs({
   username: "your-sauce-username",
-  password: "your-sauce-api-key"
+  password: "your-sauce-api-key",
 });
 
 myAccount.getAccountDetails(function (err, res) {
@@ -13,7 +13,7 @@ myAccount.getAccountDetails(function (err, res) {
     myAccount.getJobs(function (err, jobs) {
       // Get a list of all your jobs
       for (let k in jobs) {
-        if ( jobs.hasOwnProperty( k )) {
+        if (jobs.hasOwnProperty(k)) {
           myAccount.showJob(jobs[k].id, function (err, res) {
             let str = res.id + ": Status: " + res.status;
             if (res.error) {

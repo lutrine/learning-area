@@ -2,13 +2,14 @@ const request = require("request");
 
 let bsUser = "BROWSERSTACK_USERNAME";
 let bsKey = "BROWSERSTACK_ACCESS_KEY";
-let baseUrl = "https://" + bsUser + ":" + bsKey + "@www.browserstack.com/automate/";
+let baseUrl =
+  "https://" + bsUser + ":" + bsKey + "@www.browserstack.com/automate/";
 
-function getPlanDetails(){
-	request({uri: baseUrl + "plan.json"}, function(err, res, body){
-		console.log(JSON.parse(body));
-	});
-	/* Response:
+function getPlanDetails() {
+  request({ uri: baseUrl + "plan.json" }, function (err, res, body) {
+    console.log(JSON.parse(body));
+  });
+  /* Response:
 	{
 		automate_plan: <string>,
 		parallel_sessions_running: <int>,

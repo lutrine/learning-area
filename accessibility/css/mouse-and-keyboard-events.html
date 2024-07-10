@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Mouse and keyboard events example</title>
     <style>
       .thumb {
@@ -17,9 +17,14 @@
   <body>
     <h1>Mouse and keyboard events example</h1>
 
-    <img class="thumb" src="pirate.jpg" tabindex="0" alt="A lego pirate figure with a cutlass, pistol, tricornered hat, peg leg, long hair and beard.">
+    <img
+      class="thumb"
+      src="pirate.jpg"
+      tabindex="0"
+      alt="A lego pirate figure with a cutlass, pistol, tricornered hat, peg leg, long hair and beard."
+    />
     <script>
-      const imgThumb = document.querySelector('.thumb');
+      const imgThumb = document.querySelector(".thumb");
 
       imgThumb.onmouseover = showImg;
       imgThumb.onmouseout = hideImg;
@@ -28,23 +33,22 @@
       imgThumb.onblur = hideImg;
 
       function showImg() {
-        const imgZoom = document.createElement('img');
-        imgZoom.setAttribute('class','zoom');
-        imgZoom.setAttribute('src',imgThumb.getAttribute('src'));
+        const imgZoom = document.createElement("img");
+        imgZoom.setAttribute("class", "zoom");
+        imgZoom.setAttribute("src", imgThumb.getAttribute("src"));
 
         let widthOffset = imgThumb.x + imgThumb.width + 10;
-        imgZoom.style.left = widthOffset + 'px';
+        imgZoom.style.left = widthOffset + "px";
         let heightOffset = imgThumb.y;
-        imgZoom.style.top = heightOffset + 'px';
+        imgZoom.style.top = heightOffset + "px";
 
         document.body.appendChild(imgZoom);
       }
 
       function hideImg() {
-        const imgZoom = document.querySelector('.zoom');
+        const imgZoom = document.querySelector(".zoom");
         document.body.removeChild(imgZoom);
       }
-
     </script>
   </body>
 </html>

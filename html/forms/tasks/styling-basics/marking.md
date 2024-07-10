@@ -20,7 +20,11 @@ The finished CSS could look something like this:
 body {
   background-color: #fff;
   color: #333;
-  font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+  font:
+    1em / 1.4 Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
   padding: 1em;
   margin: 0;
   width: 400px;

@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Random color event object example</title>
     <style>
       button {
         margin: 10px;
         font-size: 300%;
         padding: 30px;
-      };
+      }
     </style>
   </head>
   <body>
     <button>Change color</button>
     <script>
-      const btn = document.querySelector('button');
+      const btn = document.querySelector("button");
 
       function random(number) {
-        return Math.floor(Math.random() * (number+1));
+        return Math.floor(Math.random() * (number + 1));
       }
 
       function bgChange(e) {
@@ -27,7 +27,7 @@
         console.log(e);
       }
 
-      btn.addEventListener('click', bgChange);
+      btn.addEventListener("click", bgChange);
     </script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 /* General styles */
 
 html {
-  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-family: "Helvetica neue", Arial, "sans serif";
   font-size: 10px;
 }
 
@@ -20,7 +20,8 @@ h2 {
   font-size: 3.2em;
 }
 
-p, li {
+p,
+li {
   font-size: 1.7em;
 }
 
@@ -28,13 +29,15 @@ p, li {
 
 /* header and footer */
 
-header, footer {
+header,
+footer {
   background-color: teal;
   height: 10em;
   padding: 2em;
 }
 
-h1, footer p {
+h1,
+footer p {
   margin: 0;
 }
 
@@ -49,7 +52,8 @@ main {
   padding: 2em;
 }
 
-main p, main li {
+main p,
+main li {
   line-height: 2;
 }
 

@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
     <title>Arrow function example</title>
-
   </head>
 
   <body>
     <script>
-      let array = ['Chris', 'Bob', 'Mark', 'Paul'];
+      let array = ["Chris", "Bob", "Mark", "Paul"];
 
       // Old style syntax
       //
@@ -21,9 +20,9 @@
 
       // Arrow function syntax
       array.forEach((e, i, a) => {
-         const elem = document.createElement('p');
-         elem.textContent = (i + 1) + '. ' + e;
-         document.body.appendChild(elem);
+        const elem = document.createElement("p");
+        elem.textContent = i + 1 + ". " + e;
+        document.body.appendChild(elem);
       });
     </script>
   </body>

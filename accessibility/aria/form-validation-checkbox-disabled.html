@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Form validation example</title>
     <style>
       html {
@@ -30,7 +30,8 @@
         float: right;
       }
 
-      label, input {
+      label,
+      input {
         font-size: 1em;
         line-height: 1.5;
       }
@@ -62,10 +63,7 @@
   <body>
     <h1>Form validation example</h1>
     <div class="errors" role="alert" aria-relevant="all">
-      <ul>
-
-      </ul>
-
+      <ul></ul>
     </div>
 
     <p>Fields marked with an asterisk (*) are required.</p>
@@ -73,22 +71,33 @@
     <form>
       <div>
         <label for="name">Enter your name*:</label>
-        <input type="text" name="name" id="name" aria-required="true">
+        <input type="text" name="name" id="name" aria-required="true" />
       </div>
       <div>
         <label for="age">Enter your age*:</label>
-        <input type="number" name="age" id="age" placeholder="Enter 1 to 150" aria-required="true">
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="Enter 1 to 150"
+          aria-required="true"
+        />
       </div>
       <div>
         <label for="musician">Musician:</label>
-        <input type="checkbox" name="musician" id="musician">
+        <input type="checkbox" name="musician" id="musician" />
       </div>
       <div>
         <label for="instruments">Instruments played*:</label>
-        <input type="text" name="instruments" id="instruments" aria-required="true">
+        <input
+          type="text"
+          name="instruments"
+          id="instruments"
+          aria-required="true"
+        />
       </div>
       <div>
-        <input type="submit">
+        <input type="submit" />
       </div>
       <div></div>
     </form>

@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Events: Task 2</title>
     <style>
       p {
@@ -21,37 +21,31 @@
   </head>
 
   <body>
+    <section class="preview"></section>
 
-    <section class="preview">
-    </section>
+    <canvas width="480" height="320" tabindex="0"> </canvas>
 
-    <canvas width="480" height="320" tabindex="0">
+    <script>
+      const canvas = document.querySelector("canvas");
+      const ctx = canvas.getContext("2d");
 
-    </canvas>
+      function drawCircle(x, y, size) {
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  <script>
-    const canvas = document.querySelector('canvas');
-    const ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.fillStyle = "black";
+        ctx.arc(x, y, size, 0, 2 * Math.PI);
+        ctx.fill();
+      }
 
-    function drawCircle(x, y, size) {
-      ctx.fillStyle = 'white';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      let x = 50;
+      let y = 50;
+      const size = 30;
 
-      ctx.beginPath();
-      ctx.fillStyle = 'black';
-      ctx.arc(x, y, size, 0, 2 * Math.PI);
-      ctx.fill();
-    }
+      drawCircle(x, y, size);
 
-    let x = 50;
-    let y = 50;
-    const size = 30;
-
-    drawCircle(x, y, size);
-
-    // Add your code here
-
-  </script>
+      // Add your code here
+    </script>
   </body>
-  
 </html>

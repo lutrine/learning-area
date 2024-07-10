@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Simple button example</title>
     <style>
       html {
@@ -28,16 +28,12 @@
 
     <button>Press me!</button>
 
-
     <script>
+      const btn = document.querySelector("button");
 
-      const btn = document.querySelector('button');
-
-      btn.onclick = function() {
-        alert('Ouch, that hurt!');
-      }
-
-
+      btn.onclick = function () {
+        alert("Ouch, that hurt!");
+      };
     </script>
   </body>
 </html>

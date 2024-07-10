@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Week example</title>
     <style>
       div {
@@ -18,32 +18,36 @@
         padding-right: 30px;
       }
 
-      input:invalid+span:after {
+      input:invalid + span:after {
         position: absolute;
-        content: '✖';
+        content: "✖";
         padding-left: 5px;
       }
 
-      input:valid+span:after {
+      input:valid + span:after {
         position: absolute;
-        content: '✓';
+        content: "✓";
         padding-left: 5px;
       }
     </style>
-   </head>
+  </head>
   <body>
     <form>
       <div>
         <label for="week">What week would you like to start?</label>
-        <input id="week" type="week" name="week"
-               min="2017-W01" max="2017-W52" required>
+        <input
+          id="week"
+          type="week"
+          name="week"
+          min="2017-W01"
+          max="2017-W52"
+          required
+        />
         <span class="validity"></span>
       </div>
       <div>
-        <input type="submit" value="Submit form">
+        <input type="submit" value="Submit form" />
       </div>
     </form>
-
-
-</body>
-  </html>
+  </body>
+</html>

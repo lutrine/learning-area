@@ -1,38 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Basic do...while loop example</title>
-    <style>
-
-    </style>
+    <style></style>
   </head>
   <body>
-
-  <p></p>
-
+    <p></p>
 
     <script>
-    const cats = ['Bill', 'Jeff', 'Pete', 'Biggles', 'Jasmin'];
-    let myFavoriteCats = 'My cats are called ';
-    const para = document.querySelector('p');
+      const cats = ["Bill", "Jeff", "Pete", "Biggles", "Jasmin"];
+      let myFavoriteCats = "My cats are called ";
+      const para = document.querySelector("p");
 
-    let i = 0;
+      let i = 0;
 
-    do {
-      if (i === cats.length - 1) {
-        myFavoriteCats += `and ${cats[i]}.`;
-      } else {
-        myFavoriteCats += `${cats[i]}, `;
-      }
+      do {
+        if (i === cats.length - 1) {
+          myFavoriteCats += `and ${cats[i]}.`;
+        } else {
+          myFavoriteCats += `${cats[i]}, `;
+        }
 
-      i++;
-    } while (i < cats.length);
+        i++;
+      } while (i < cats.length);
 
-    para.textContent = myFavoriteCats;
-
+      para.textContent = myFavoriteCats;
     </script>
-
   </body>
 </html>

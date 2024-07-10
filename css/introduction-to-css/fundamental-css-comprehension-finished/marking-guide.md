@@ -1,4 +1,5 @@
 # Marking guide for "Fundamental CSS comprehension"
+
 The following guide outlines a marking guide for the MDN Learning Area HTML Topic — [Fundamental CSS comprehension](https://developer.mozilla.org/en-US/Learn/CSS/Introduction_to_CSS/Fundamental_CSS_comprehension). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth, and the mark breakdown.
 
 Note: These are guidelines, not set in stone rules — you are of course free to use your judgement on mark awarding when you meet an edge case, or something that isn't clear cut.
@@ -67,6 +68,7 @@ The overall mark awarded is out of 35. Work out their final mark, and then divid
 </dl>
 
 ## Other things to think about
+
 <dl>
 <dt>"You'll get bonus marks if you write your CSS for maximum readability, with a separate declaration on each line." (2 marks)</dt>
 <dd>If the CSS is arranged in a readable  manner, with a separate declaration on each line (or similar), then they get the marks. If not, then they don't.</dd>

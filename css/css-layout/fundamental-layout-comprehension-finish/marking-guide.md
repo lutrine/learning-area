@@ -10,11 +10,11 @@ While the actual amount of code that is required to be added is relatively small
 
 **Display the navigation items in a row, with an equal amount of space between the items.**
 
-Here the student should use flexbox, adding `display: flex` to `nav ul` (2 marks), and `justify-content: space-between` (2 marks) to distribute the additional space between the items.  
+Here the student should use flexbox, adding `display: flex` to `nav ul` (2 marks), and `justify-content: space-between` (2 marks) to distribute the additional space between the items.
 
 **The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it.**
 
-The selector `nav` should have `position: sticky` (2 marks) plus an offset value of `top: 0` (2 marks). 
+The selector `nav` should have `position: sticky` (2 marks) plus an offset value of `top: 0` (2 marks).
 
 **The image that is inside the article should have text wrapped around it.**
 
@@ -22,7 +22,7 @@ The image should be floated left `float: left` (2 marks) with a right and bottom
 
 **The `<article>` and `<aside>` elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.**
 
-Here the student would ideally use CSS Grid  `display: grid` (2 marks), with the `fr` unit for the columns `grid-template-columns: 3fr 1fr` (2 marks). It would also be possible to use flexbox, and that would be acceptable too. Percentages would work for the column tracks, but ideally they realise that the fr unit works nicely here. The actual proportions they pick don't really matter. A `grid-gap` or `gap` property should separate the tracks, e.g. `grid-gap: 20px` (2 marks).
+Here the student would ideally use CSS Grid `display: grid` (2 marks), with the `fr` unit for the columns `grid-template-columns: 3fr 1fr` (2 marks). It would also be possible to use flexbox, and that would be acceptable too. Percentages would work for the column tracks, but ideally they realise that the fr unit works nicely here. The actual proportions they pick don't really matter. A `grid-gap` or `gap` property should separate the tracks, e.g. `grid-gap: 20px` (2 marks).
 
 **The photographs should display as a two column grid with a 1 pixel gap between the images.**
 

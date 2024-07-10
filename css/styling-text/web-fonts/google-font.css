@@ -22,8 +22,9 @@ h2 {
   font-size: 3rem;
 }
 
-h1, h2 {
-  font-family: 'Lobster', cursive;
+h1,
+h2 {
+  font-family: "Lobster", cursive;
 }
 
 p {
@@ -31,5 +32,5 @@ p {
   line-height: 1.6;
   word-spacing: 0.6rem;
   letter-spacing: 0.1rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }

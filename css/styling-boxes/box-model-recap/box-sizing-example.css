@@ -3,7 +3,8 @@ html {
   background: #ccc;
 }
 
-.one, .two {
+.one,
+.two {
   background: red;
   width: 300px;
   height: 150px;

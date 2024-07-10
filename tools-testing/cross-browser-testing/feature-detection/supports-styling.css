@@ -40,7 +40,6 @@ footer p {
 }
 
 @supports (flex-flow: row) and (flex: 1) {
-
   main {
     display: flex;
   }
@@ -53,11 +52,9 @@ footer p {
   main div:last-child {
     padding-right: 0;
   }
-
 }
 
 @supports not (flex-flow: row) and (flex: 1) {
-
   main div {
     width: 22%;
     float: left;
@@ -71,5 +68,4 @@ footer p {
   footer {
     clear: left;
   }
-
 }

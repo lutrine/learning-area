@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
@@ -157,7 +157,7 @@ ctx.fillRect(10, 10, x, y);
         const front = textarea.value.substring(0, caretPos);
         const back = textarea.value.substring(
           textarea.selectionEnd,
-          textarea.value.length
+          textarea.value.length,
         );
 
         textarea.value = front + text + back;

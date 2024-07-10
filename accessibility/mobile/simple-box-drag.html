@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Simple box drag example</title>
     <style>
       html {
@@ -16,8 +16,12 @@
       }
 
       div {
-        background-color: #1FE200;
-        background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.4));
+        background-color: #1fe200;
+        background-image: linear-gradient(
+          to bottom right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.4)
+        );
         width: 200px;
         height: 150px;
         border: 1px solid green;
@@ -34,12 +38,12 @@
 
       let mouseX, mouseY;
 
-      document.onmousemove = function(e) {
+      document.onmousemove = function (e) {
         mouseX = e.clientX;
         mouseY = e.clientY;
-      }
+      };
 
-      const div = document.querySelector('div');
+      const div = document.querySelector("div");
 
       let initialMouseX = null;
 
@@ -47,16 +51,16 @@
 
       var initialBoxX, initialBoxY, rAF;
 
-      div.onmousedown = function() {
+      div.onmousedown = function () {
         initialBoxX = div.offsetLeft;
         initialBoxY = div.offsetTop;
         movePanel();
-      }
+      };
 
       document.onmouseup = stopMove;
 
       function movePanel() {
-        if(initialMouseX === null) {
+        if (initialMouseX === null) {
           initialMouseX = mouseX;
           initialMouseY = mouseY;
         } else {
@@ -65,10 +69,10 @@
 
           let offsetX = initialBoxX + mouseMoveX;
           let offsetY = initialBoxY + mouseMoveY;
-          console.log(offsetX + ' ' + offsetY);
+          console.log(offsetX + " " + offsetY);
 
-          div.style.left = offsetX + 'px';
-          div.style.top = offsetY + 'px';
+          div.style.left = offsetX + "px";
+          div.style.top = offsetY + "px";
         }
 
         rAF = requestAnimationFrame(movePanel);
@@ -77,12 +81,11 @@
       function stopMove() {
         cancelAnimationFrame(rAF);
 
-        console.log('mousemove stopped');
+        console.log("mousemove stopped");
 
         initialMouseX = null;
         initialMouseY = null;
       }
-
     </script>
   </body>
 </html>

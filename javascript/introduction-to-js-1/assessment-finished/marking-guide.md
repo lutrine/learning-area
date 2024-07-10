@@ -1,4 +1,5 @@
 # Marking guide for "Silly story generator"
+
 The following guide outlines a marking guide for the MDN Learning Area JavaScript Topic — [Silly story generator](https://developer.mozilla.org/en-US/Learn/JavaScript/First_steps/Silly_story_generator). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth, and the mark breakdown.
 
 Note: These are guidelines, not set in stone rules — you are of course free to use your judgement on mark awarding when you meet an edge case, or something that isn't clear cut.
@@ -26,6 +27,7 @@ The overall mark awarded is out of 39. Work out their final mark, and then divid
 </dl>
 
 ## Placing the event handler and incomplete function
+
 Only one mark for this bit — it's just more simple copy and paste.
 
 ## Completing the result() function

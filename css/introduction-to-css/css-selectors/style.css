@@ -10,16 +10,26 @@ hr {
 #element-selectors h1 {
   color: red;
   text-shadow: 1px 1px 1px black;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.1)
+  );
   padding: 3px;
   text-align: center;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset -2px -2px 5px rgba(255,255,255,0.5);
+  box-shadow:
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.5);
 }
 
 /* Class selectors example */
 
 #class-selectors .base-box {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3)
+  );
   padding: 3px 3px 3px 7px;
 }
 
@@ -53,7 +63,7 @@ hr {
 }
 
 #id-selectors #third {
-  background-color: #CD7F32;
+  background-color: #cd7f32;
 }
 
 /* Attribute selectors */
@@ -71,15 +81,15 @@ hr {
 }
 
 #attribute-selectors li[data-perf*="inc"] {
-  background-color: rgba(0,255,0,0.7);
+  background-color: rgba(0, 255, 0, 0.7);
 }
 
 #attribute-selectors li[data-perf*="same"] {
-  background-color: rgba(0,0,255,0.5);
+  background-color: rgba(0, 0, 255, 0.5);
 }
 
 #attribute-selectors li[data-perf*="dec"] {
-  background-color: rgba(255,0,0,0.7);
+  background-color: rgba(255, 0, 0, 0.7);
 }
 
 #attribute-selectors li[data-perf*="pro"] {
@@ -127,7 +137,7 @@ hr {
   background-color: #ccc;
 }
 
-#pseudo-class-selectors li:nth-of-type(2n+1) {
+#pseudo-class-selectors li:nth-of-type(2n + 1) {
   background-color: #eee;
 }
 

@@ -80,7 +80,7 @@ const a = 5;
 const b = 8;
 
 const myString = `Using ${theorem}, we can work out that that if the two shortest sides of a right-angled triangle have lengths of ${a} and ${b}, the length of the hypotenuse is ${Math.sqrt(
-  a ** 2 + b ** 2
+  a ** 2 + b ** 2,
 )}.`;
 ```
 

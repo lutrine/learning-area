@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Toggle switch example</title>
     <style>
       * {
@@ -61,7 +61,7 @@
         height: 16px;
         border-radius: 9px;
         background-color: black;
-        content: '';
+        content: "";
         position: absolute;
         top: 7px;
         left: 16%;
@@ -88,11 +88,13 @@
          checked and unchecked, respectively
       */
 
-      input[type="checkbox"] ~ label .on, input[type="checkbox"]:checked ~ label .off {
+      input[type="checkbox"] ~ label .on,
+      input[type="checkbox"]:checked ~ label .off {
         opacity: 0;
       }
 
-      input[type="checkbox"] ~ label .off, input[type="checkbox"]:checked ~ label .on {
+      input[type="checkbox"] ~ label .off,
+      input[type="checkbox"]:checked ~ label .on {
         opacity: 1;
       }
 
@@ -104,14 +106,15 @@
       input:focus {
         outline: 1px dotted black;
       }
-
     </style>
   </head>
   <body>
     <ul>
       <li>
-        <input type="checkbox" name="power" id="power">
-        <label for="power"><span class="on">On</span> <span class="off">Off</span></label>
+        <input type="checkbox" name="power" id="power" />
+        <label for="power"
+          ><span class="on">On</span> <span class="off">Off</span></label
+        >
       </li>
     </ul>
   </body>

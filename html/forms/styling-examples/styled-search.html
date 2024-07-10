@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Styled search</title>
     <style>
-      body, form > div {
+      body,
+      form > div {
         display: flex;
       }
 
@@ -30,23 +31,24 @@
         outline: none;
       }
 
-      input[type="search"]:hover, input[type="search"]:focus {
+      input[type="search"]:hover,
+      input[type="search"]:focus {
         background: #eee;
-        box-shadow: 1px 1px 1px red,
-                    inset 2px 2px 3px #666;
+        box-shadow:
+          1px 1px 1px red,
+          inset 2px 2px 3px #666;
       }
     </style>
   </head>
 
-<body>
-  <div>
-    <form>
-      <div>
-        <label for="search2">search: </label>
-        <input id="search2" name="search2" type="search">
-      </div>
-    </form>
-  </div>
-</body>
-
+  <body>
+    <div>
+      <form>
+        <div>
+          <label for="search2">search: </label>
+          <input id="search2" name="search2" type="search" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

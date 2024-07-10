@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>First conditional example</title>
   </head>
   <body>
@@ -11,18 +11,18 @@
   </body>
 
   <script>
-    const btn = document.querySelector('button');
-    const txt = document.querySelector('p');
+    const btn = document.querySelector("button");
+    const txt = document.querySelector("p");
 
-    btn.addEventListener('click', updateBtn);
+    btn.addEventListener("click", updateBtn);
 
     function updateBtn() {
-      if(btn.textContent === 'Start machine') {
-        btn.textContent = 'Stop machine';
-        txt.textContent = 'The machine has started!';
+      if (btn.textContent === "Start machine") {
+        btn.textContent = "Stop machine";
+        txt.textContent = "The machine has started!";
       } else {
-        btn.textContent = 'Start machine';
-        txt.textContent = 'The machine is stopped.';
+        btn.textContent = "Start machine";
+        txt.textContent = "The machine is stopped.";
       }
     }
   </script>

@@ -12,7 +12,9 @@ html {
   border: 1px solid #ccc;
 }
 
-video, audio, .controls {
+video,
+audio,
+.controls {
   width: 100%;
 }
 
@@ -30,7 +32,8 @@ button {
   cursor: pointer;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   background-color: #ddd;
 }
 

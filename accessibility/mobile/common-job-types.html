@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Common job types example</title>
     <style>
       html {
@@ -15,7 +15,7 @@
     </style>
   </head>
   <body>
-    <h1>Common job types form </h1>
+    <h1>Common job types form</h1>
 
     <form>
       <div>
@@ -30,24 +30,23 @@
       </div>
       <div>
         <label for="other-job">Other job:</label>
-        <input type="text" name="other-job" id="other-job">
+        <input type="text" name="other-job" id="other-job" />
       </div>
     </form>
 
     <script>
-      const select = document.querySelector('select');
-      const other = document.querySelector('input');
+      const select = document.querySelector("select");
+      const other = document.querySelector("input");
 
-      other.parentElement.style.display = 'none';
+      other.parentElement.style.display = "none";
 
-      select.onchange = function() {
-        if(select.value === 'other') {
-          other.parentElement.style.display = 'block';
+      select.onchange = function () {
+        if (select.value === "other") {
+          other.parentElement.style.display = "block";
         } else {
-          other.parentElement.style.display = 'none';
+          other.parentElement.style.display = "none";
         }
-      }
-
+      };
     </script>
   </body>
 </html>

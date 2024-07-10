@@ -6,13 +6,11 @@ const { Builder, Capabilities, By } = require("selenium-webdriver");
 
 describe("Alert", () => {
   it("should have the correct text content - this is from the first button", (done) => {
-    let driver = new Builder()
-      .withCapabilities(Capabilities.firefox())
-      .build();
+    let driver = new Builder().withCapabilities(Capabilities.firefox()).build();
 
     driver
       .get(
-        "http://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/native-keyboard-accessibility.html"
+        "http://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/native-keyboard-accessibility.html",
       )
       .then(() => driver.findElement(By.css("button:nth-of-type(1)")))
       .then((button) => button.click())

@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Editable form &lt;input&gt; example</title>
     <style>
       textarea {
         height: 80px;
-        background-color: #F4F7F8;
+        background-color: #f4f7f8;
         border: none;
-        border-left: 6px solid #558ABB;
-        color: #4D4E53;
+        border-left: 6px solid #558abb;
+        color: #4d4e53;
         width: 90%;
         max-width: 700px;
         padding: 10px 10px 0px;
@@ -26,7 +26,7 @@
       section {
         width: 90%;
         max-width: 700px;
-        border: 1px solid #4D4E53;
+        border: 1px solid #4d4e53;
         border-radius: 2px;
         padding: 10px 14px 10px 10px;
         margin-bottom: 10px;
@@ -39,8 +39,7 @@
     </style>
   </head>
   <body>
-    <section>
-    </section>
+    <section></section>
 
     <textarea id="code" class="playable-code">
 <input id="input1" type="text">
@@ -48,30 +47,30 @@
     </textarea>
 
     <div class="playable-buttons">
-      <input id="reset" type="button" value="Reset">
+      <input id="reset" type="button" value="Reset" />
     </div>
   </body>
 
   <script>
-    var section = document.querySelector('section');
-    var textarea = document.getElementById('code');
-    var reset = document.getElementById('reset');
-    var edit = document.getElementById('edit');
+    var section = document.querySelector("section");
+    var textarea = document.getElementById("code");
+    var reset = document.getElementById("reset");
+    var edit = document.getElementById("edit");
     var code = textarea.value;
 
     function fillSection() {
       while (section.firstChild) {
-          section.removeChild(section.firstChild);
+        section.removeChild(section.firstChild);
       }
       section.innerHTML = textarea.value;
     }
 
-    reset.addEventListener('click', function() {
+    reset.addEventListener("click", function () {
       textarea.value = code;
       fillSection();
     });
 
-    textarea.addEventListener('input', fillSection);
-    window.addEventListener('load', fillSection);
+    textarea.addEventListener("input", fillSection);
+    window.addEventListener("load", fillSection);
   </script>
 </html>
