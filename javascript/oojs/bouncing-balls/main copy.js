@@ -57,3 +57,21 @@ class Ball {
     this.y += this.velY;
   }
 }
+
+// put the animations here
+
+const balls = [];
+
+while (balls.length < 25) {
+  const size = random(10, 20); // RNG for ball size
+  const ball = new Ball( // create ball using random values
+    random(0 + size, width - size),
+    random(0 + size, height - size),
+    random(-7, 7),
+    random(-7, 7),
+    randomRGB(),
+    size
+  );
+
+  balls.push(ball); // push ball onto balls array
+}
