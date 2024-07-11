@@ -1,8 +1,11 @@
 // setup canvas
 
+// select the `<canvas>` element and store it in a variable with the same name
 const canvas = document.querySelector("canvas");
+// use `getContext()` to specify the canvas's medium — in this case, it's 2d
 const ctx = canvas.getContext("2d");
 
+// set the width and the height of the canvas equal to the browser's width and height
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
