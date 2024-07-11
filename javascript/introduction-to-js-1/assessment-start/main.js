@@ -17,7 +17,9 @@ const insertZ = [
   "turned into a slug and crawled away",
 ];
 
-randomize.addEventListener("click", result);
+if (randomize) {
+  randomize.addEventListener("click", result);
+}
 
 function result() {
   let newStory = storyText;
@@ -34,18 +36,21 @@ function result() {
     }
   });
 
-  if (customName.value !== "") {
+  if (customName instanceof HTMLInputElement && customName.value !== "") {
     const name = customName.value;
     newStory = newStory.replace("Bob", name);
   }
 
-  if (document.getElementById("uk").checked) {
+  const ukCheckbox = document.getElementById("uk");
+  if (ukCheckbox instanceof HTMLInputElement && ukCheckbox.checked) {
     const weight = Math.round(300 / 14) + " stone";
     const temperature = Math.round((94 - 32) * (5 / 9)) + " centigrade";
     newStory = newStory.replace("300 pounds", weight);
     newStory = newStory.replace("94 fahrenheit", temperature);
   }
 
-  story.textContent = newStory;
-  story.style.visibility = "visible";
+  if (story !== null && story instanceof HTMLElement) {
+    story.textContent = newStory;
+    story.style.visibility = "visible";
+  }
 }
