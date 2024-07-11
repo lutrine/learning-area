@@ -90,3 +90,5 @@ function loop() {
   // create continuous animation loop
   requestAnimationFrame(loop);
 }
+
+loop();
