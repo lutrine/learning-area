@@ -19,5 +19,38 @@
   <body>
     <section class="preview"></section>
   </body>
-  <script></script>
+  <script>
+    class Shape {
+      name;
+      sides;
+      sideLength;
+
+      constructor(name, sides, sideLength) {
+        this.name = name;
+        this.sides = sides;
+        this.sideLength = sideLength;
+      }
+
+      calcPerimeter() {
+        console.log(
+          `The ${this.name}'s perimeter is ${this.sides * this.sideLength}.`
+        );
+      }
+    }
+    class Square extends Shape {
+    
+      constructor(sideLength) {
+        // Use `super` keyword to pass up parameters to parent constructor
+        super("square", 4, sideLength);
+      }
+
+      calcArea() {
+        console.log(`The ${this.name}'s area is ${this.sideLength ** 2}.`);
+      }
+    }
+
+    const square = new Square(3);
+    square.calcPerimeter();
+    square.calcArea();
+  </script>
 </html>
