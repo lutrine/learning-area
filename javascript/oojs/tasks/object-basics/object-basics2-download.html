@@ -24,6 +24,82 @@
 
     // Add your code here
 
+    let band = {
+      name: "Car Seat Headrest",
+      nationality: "American",
+      genre: "indie rock",
+      members: 4,
+      formed: 2015,
+      split: false,
+      albums: [
+        {
+          name: "Teens of Style",
+          released: 2015,
+        },
+        {
+          name: "Teens of Denial",
+          released: 2016,
+        },
+        {
+          name: "Twin Fantasy (Face to Face)",
+          released: 2018,
+        },
+        {
+          name: "Making a Door Less Open",
+          released: 2020,
+        },
+      ],
+      solo: {
+        members: 1,
+        formed: 2010,
+        split: 2014,
+        albums: [
+          {
+            name: "1",
+            released: 2010,
+          },
+          {
+            name: "2",
+            released: 2010,
+          },
+          {
+            name: "3",
+            released: 2010,
+          },
+          {
+            name: "4",
+            released: 2010,
+          },
+          {
+            name: "My Back Is Killing Me Baby",
+            released: 2011,
+          },
+          {
+            name: "Twin Fantasy",
+            released: 2011,
+          },
+          {
+            name: "Monomania",
+            released: 2012,
+          },
+          {
+            name: "Nervous Young Man",
+            released: 2013,
+          },
+        ],
+      },
+    };
+
+    bandInfo = `${band.nationality} ${band.genre} band ${band.name} originally 
+                began as a solo recording project by lead singer Will Toledo in 
+                ${band.solo.formed}, where he released 
+                ${band.solo.albums.length} albums until ${band.solo.split}. 
+                During that time, he released ${band.solo.albums[5].name}, 
+                arguably his most critically acclaimed album to date. He 
+                signed to Matador Records in ${band.formed} and began 
+                touring as a full band the following year. The band 
+                currently has ${band.members} members.`;
+
     // Don't edit the code below here!
 
     const section = document.querySelector("section");
