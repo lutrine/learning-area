@@ -75,3 +75,18 @@ while (balls.length < 25) {
 
   balls.push(ball); // push ball onto balls array
 }
+
+function loop() {
+  // sets the background to semi-transparent black
+  ctx.fillStyle = "rgb(0 0 0 / 25%)";
+  ctx.fillRect(0, 0, width, height);
+
+  // draws and updates the position of the ball
+  for (const ball of balls) {
+    ball.draw();
+    ball.update();
+  }
+
+  // create continuous animation loop
+  requestAnimationFrame(loop);
+}
