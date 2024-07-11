@@ -56,6 +56,23 @@ class Ball {
     this.x += this.velX;
     this.y += this.velY;
   }
+  collisionDetect() {
+    // loop through each ball
+    for (const ball of balls) {
+      // check whether the current ball being looped through is the same as the
+      // one we're currently checking
+      if (this !== ball) {
+        const dx = this.x - ball.x; // difference between x coords
+        const dy = this.y - ball.y; // difference between y coords
+        const distance = Math.sqrt(dx * dx + dy * dy); // distance formula
+
+        // if a collision is detected between the balls, then set them both to a random color
+        if (distance < this.size + ball.size) {
+          ball.color = this.color = randomRGB();
+        }
+      }
+    }
+  }
 }
 
 // put the animations here
@@ -85,6 +102,7 @@ function loop() {
   for (const ball of balls) {
     ball.draw();
     ball.update();
+    ball.collisionDetect();
   }
 
   // create continuous animation loop
